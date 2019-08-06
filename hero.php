@@ -4,7 +4,7 @@
 <h1><?php echo $heroTitel?></h1>
 <p> <?php echo $heroText ?> </p>
 
-</div>
+    </div>
 </div>
 
 

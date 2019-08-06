@@ -40,7 +40,7 @@
 
            
             <p>Beskrivning:</p>
-            <textarea name="beskrivning" rows="20" cols="110"></textarea>
+            <textarea name="beskrivning"></textarea>
             
         </div>
 

@@ -52,6 +52,7 @@ $conn->close();
     <link rel="stylesheet" href="styles.css">
     <title> Calle Ciebeles 3 </title>
     <script src="https://kit.fontawesome.com/2c9b326388.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>

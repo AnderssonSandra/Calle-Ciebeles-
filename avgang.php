@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <title> Calle Ciebeles 3 </title>
     <script src="https://kit.fontawesome.com/2c9b326388.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
@@ -15,7 +16,7 @@
 <a class= "tillbaka" href= "./"> <i class="fas fa-home"></i> </a>
 
 <?php 
-$heroTitel = "Hemgång";
+$heroTitel = "Avgång";
 $heroText = "Här kommer lite information om vad du behöver göra när du ska lämna lägenheten.";
 $heroBild = "Bilder/hav.jpg";
 include 'hero.php';

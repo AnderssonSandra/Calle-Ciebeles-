@@ -36,6 +36,20 @@ body {
 
 }
 
+@media only screen and (max-width: 1000px) {
+
+    .hero .heroText {
+
+        font-size: 20px;
+    }
+
+    .hero p {
+
+        font-size: 12px;
+        line-height: 1.2;
+    }
+}
+
 .infokomponent {
 
     width: 100%;
@@ -94,6 +108,24 @@ body {
 
 }
 
+@media only screen and (max-width: 1000px) {
+
+    .infokomponent .cardParent {
+
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 0 0 0;
+    }
+
+    .infokomponent .cardParent .card {
+
+        padding: 30px 30px 80px 30px;
+        margin: 15px 30px;            
+        }
+
+    }
+
+
 .tipsKomponent {
 
     background-color: black; 
@@ -144,7 +176,7 @@ body {
 
 .tipsKomponent .parentTips .card a:hover {
 
-    background-color: rgba( 0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 
 }
 
@@ -152,6 +184,29 @@ body {
 
     z-index: 2;
     pointer-events: none;
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .tipsKomponent {
+
+        font-size: 20px;
+    }
+
+    .tipsKomponent .parentTips {
+
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .tipsKomponent .parentTips .card {
+
+        padding: 30px 0;
+        margin: 12px auto;
+        width: 90%;
+
+    }
 
 }
 
@@ -210,6 +265,12 @@ body {
 
 }
 
+textarea {
+
+    width: 100%;
+    height: 200px;
+}
+
 input[type=submit] {
 
 padding: 20px;
@@ -231,6 +292,39 @@ input[type=submit]:hover {
     color: white;
 
 }
+
+@media only screen and (max-width: 1000px) {
+
+    .skrivaTips h2 {
+
+        font-size: 28px;
+    }
+
+    .skrivaTips .parentTips {
+
+        flex-direction: column;
+        padding: 0 0 100px 0;
+        width: 100%;
+    }
+
+    .skrivaTips .parentTips .tipsUppgifter {
+
+        padding: 0 30px;
+
+    }
+
+    .skrivaTips .parentTips .tipsBeskrivning {
+
+        padding: 0 30px;
+        
+    }
+    form {
+
+        text-align: center;
+    }
+
+}
+
 
 .checklistaParent {
 
@@ -261,6 +355,28 @@ input[type=submit]:hover {
     font-size: 18px;
 }
 
+@media only screen and (max-width: 1000px) {
+
+    .checklista {
+
+        width: 100%;
+        padding: 30px 0;
+        margin: 0;
+
+    }
+
+    .checklista p {
+
+        padding: 15px;
+    }
+
+    .checklista h2 {
+
+        font-size: 22px;
+    }
+
+}
+
 .footer {
 
     background-color: black;
@@ -271,6 +387,11 @@ input[type=submit]:hover {
 .footer img {
 
     height: 100%;
+}
+
+.tips {
+
+    min-height: 531px;
 }
 
 .tips .tipsen {
@@ -299,4 +420,19 @@ input[type=submit]:hover {
 
     font-size: 60px;
     text-shadow: 1px 1px 1px black;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .tips .tipsen {
+
+        width: 95%;
+        padding: 20px 0;
+    }
+
+    .tips .tipsen p {
+
+        padding:0 15px;
+    }
+
 }
