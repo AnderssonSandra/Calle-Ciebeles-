@@ -4,7 +4,7 @@
 <head>
 
     <link rel="stylesheet" href="styles.css">
-    <title> Calle Ciebeles 3 </title>
+    <title> Calle Cibeles 3 </title>
     <script src="https://kit.fontawesome.com/2c9b326388.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -56,7 +56,7 @@ if ($result->num_rows > 0) {
         if($row["telefon"] != ""){
             echo " <p><b> Telefonnummer: </b>" .  $row ["telefon"] . "</p>";
         }
-        echo "<p><b> Datum: </b>" . $row ["datum"] . "</p>" ;
+        echo "<p><b> Datum: </b>" . date( "Y-m-d", strtotime ($row ["datum"]) ) . "</p>" ;
         echo "<p>" . $row ["beskrivning"] . "</p>";
 
         echo "</div>";

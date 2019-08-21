@@ -7,7 +7,7 @@
         <div class= "tipsUppgifter">
             <form action="./submit.php" method="post">
             <p>Titel:</p>
-            <input name="titel" type="text">
+            <input name="titel" type="text"required>
 
             <br>
 
@@ -40,7 +40,7 @@
 
            
             <p>Beskrivning:</p>
-            <textarea name="beskrivning"></textarea>
+            <textarea name="beskrivning" required></textarea>
             
         </div>
 

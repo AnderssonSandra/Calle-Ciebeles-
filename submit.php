@@ -12,24 +12,24 @@ if ($conn->connect_error) {
     
 }
 
-$titel = $_POST["titel"];
+$titel = $conn->real_escape_string($_POST['titel']);
 if(isset($_POST["adress"])){
-    $adress = $_POST["adress"];
+    $adress = $conn->real_escape_string($_POST['adress']);
 }else{
     $adress = "";
 }
 if(isset($_POST["email"])){
-    $email = $_POST["email"];
+    $email = $conn->real_escape_string($_POST['email']);
 }else{
     $email = "";
 }
 if(isset($_POST["telefon"])){
-    $telefon = $_POST["telefon"];
+    $telefon = $conn->real_escape_string($_POST['telefon']);
 }else{
     $telefon = "";
 }
-$kategori = $_POST["kategori"];
-$beskrivning = $_POST["beskrivning"];
+$kategori = $conn->real_escape_string($_POST['kategori']);
+$beskrivning = $conn->real_escape_string($_POST['beskrivning']);
 
 $sql= "INSERT INTO tips (titel, adress, email, telefon, kategori, beskrivning) VALUES ('". $titel . "', '" . $adress . "', '" . $email . "', '" . $telefon . "', '" . $kategori . "', '" . $beskrivning ."')";
 
